@@ -22,3 +22,14 @@ Mentorun kullanıcı tarafından yeniden tasarlanması istenen mevcut sitesindek
 - `assets/speaking.webp`: https://static.wixstatic.com/media/28568a_5b579d15bdb64d138205cd4e8a52c379~mv2.jpeg
 
 MÜSİAD Bursa fotoğrafı belirli bir BUKAGEM etkinliği olarak tanımlanmamıştır. Google Fonts bağlantısının erişilememesi durumunda sistem yazı tipleri kullanılır. İletişim bağlantıları ziyaretçinin e-posta uygulamasını açar; site mesaj kaydetmez veya otomatik göndermez.
+
+
+## Kimlik ve kurum logoları
+
+Tüm site metinleri DM Sans yazı tipini kullanır. Baş harflerden oluşturulan HŞ monogramı `dist/assets/hasan-sahin-monogram.svg` dosyasındadır; başlık, alt bilgi ve site simgesinde kullanılır.
+
+Öne çıkanlar bölümündeki SKYTR ve BTÜ marka görselleri mevcut siteden alınmıştır. Saydam kenar boşlukları alınarak orantılı boyutlandırılmıştır; renkler ve logo çizimleri korunmuştur. BUKAGEM, mevcut sitedeki gibi BTÜ sembolü ve kurum adı metninden oluşur.
+
+- SKYTR: https://static.wixstatic.com/media/28568a_e42543f053dd4ad184eda16bd766f188~mv2.png
+- BTÜ sembolü: https://static.wixstatic.com/media/28568a_5cd5d9d44e964accab1c5248fab1d0fd~mv2.png
+- BTÜ yazısı: https://static.wixstatic.com/media/28568a_7644b03729cd40c8b35dd0da3b4ececc~mv2.png
