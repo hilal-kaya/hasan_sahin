@@ -1,0 +1,38 @@
+{
+  "keyboard": "Skip link, mobile menu Enter/Escape/focus, desktop/mobile resize passed",
+  "clipboardFailure": "Manual selectable fallback shown; no false success",
+  "contactNavigation": "Contact skip link and return to homepage section passed",
+  "video": {
+    "url": "https://www.docdrhasansahin.com/#comp-jtff6odi",
+    "openedInNewTab": true
+  },
+  "parity": {
+    "biography": true,
+    "publicationCount": 3,
+    "photoCount": 3,
+    "shareCount": 4,
+    "formFieldNames": [
+      {
+        "name": "firstName",
+        "required": true
+      },
+      {
+        "name": "lastName",
+        "required": true
+      },
+      {
+        "name": "email",
+        "required": true
+      },
+      {
+        "name": "subject",
+        "required": false
+      },
+      {
+        "name": "message",
+        "required": false
+      }
+    ],
+    "footer": "©2026, SKYTR Yazılım Katkılarıyla\n\nİletişim & konuşmacı daveti ↗"
+  }
+}

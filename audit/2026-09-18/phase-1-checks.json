@@ -1,0 +1,148 @@
+{
+  "results": [
+    {
+      "name": "desktop",
+      "viewport": 1440,
+      "scroll": 1440,
+      "height": 1034,
+      "portrait": {
+        "complete": true,
+        "width": 648,
+        "src": "http://127.0.0.1:4173/phase-1/assets/portrait-800.webp"
+      },
+      "fonts": [
+        {
+          "status": "loaded",
+          "family": "DM Sans"
+        },
+        {
+          "status": "loaded",
+          "family": "DM Sans"
+        }
+      ],
+      "roleCount": 3,
+      "sections": 1,
+      "h1": 1,
+      "scholar": {
+        "href": "https://scholar.google.com/citations?user=3MqbElMAAAAJ&hl=tr",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "overflow": [],
+      "menuAndNavigation": "passed",
+      "stickyHeader": "passed"
+    },
+    {
+      "name": "tablet",
+      "viewport": 834,
+      "scroll": 834,
+      "height": 1112,
+      "portrait": {
+        "complete": true,
+        "width": 383,
+        "src": "http://127.0.0.1:4173/phase-1/assets/portrait-480.webp"
+      },
+      "fonts": [
+        {
+          "status": "loaded",
+          "family": "DM Sans"
+        },
+        {
+          "status": "loaded",
+          "family": "DM Sans"
+        }
+      ],
+      "roleCount": 3,
+      "sections": 1,
+      "h1": 1,
+      "scholar": {
+        "href": "https://scholar.google.com/citations?user=3MqbElMAAAAJ&hl=tr",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "overflow": [],
+      "menuAndNavigation": "passed",
+      "stickyHeader": "passed"
+    },
+    {
+      "name": "mobile",
+      "viewport": 390,
+      "scroll": 390,
+      "height": 1288,
+      "portrait": {
+        "complete": true,
+        "width": 349,
+        "src": "http://127.0.0.1:4173/phase-1/assets/portrait-480.webp"
+      },
+      "fonts": [
+        {
+          "status": "loaded",
+          "family": "DM Sans"
+        },
+        {
+          "status": "loaded",
+          "family": "DM Sans"
+        }
+      ],
+      "roleCount": 3,
+      "sections": 1,
+      "h1": 1,
+      "scholar": {
+        "href": "https://scholar.google.com/citations?user=3MqbElMAAAAJ&hl=tr",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "overflow": [],
+      "menuAndNavigation": "passed",
+      "stickyHeader": "passed"
+    },
+    {
+      "name": "narrow",
+      "viewport": 320,
+      "scroll": 320,
+      "height": 1320,
+      "portrait": {
+        "complete": true,
+        "width": 280,
+        "src": "http://127.0.0.1:4173/phase-1/assets/portrait-480.webp"
+      },
+      "fonts": [
+        {
+          "status": "loaded",
+          "family": "DM Sans"
+        },
+        {
+          "status": "loaded",
+          "family": "DM Sans"
+        }
+      ],
+      "roleCount": 3,
+      "sections": 1,
+      "h1": 1,
+      "scholar": {
+        "href": "https://scholar.google.com/citations?user=3MqbElMAAAAJ&hl=tr",
+        "target": "_blank",
+        "rel": "noopener noreferrer"
+      },
+      "overflow": [],
+      "menuAndNavigation": "passed",
+      "stickyHeader": "passed"
+    },
+    {
+      "name": "200-percent-text",
+      "width": 1440,
+      "scroll": 1440,
+      "scrollBehavior": "auto"
+    }
+  ],
+  "errors": [],
+  "keyboard_checks": "Passed: skip link, main focus, menu Enter, Tab to navigation, pending-link feedback, Escape and focus return.",
+  "scholar_check": {
+    "checked_at": "2026-09-18",
+    "url": "https://scholar.google.com/citations?user=3MqbElMAAAAJ&hl=tr",
+    "http_status": 200,
+    "page_title": "Hasan SAHIN - Google Akademik"
+  },
+  "existing_project_files": "Unchanged: dist/index.html, dist/styles.css, dist/script.js, dist/assets, README.md, .openai/hosting.json.",
+  "deployment": "None. Local preview only."
+}

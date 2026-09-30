@@ -1,0 +1,758 @@
+{
+  "audit_date": "2026-09-17",
+  "approval_state": "awaiting user approval",
+  "scope": "Audit and proposed plan only. dist/ and deployment unchanged.",
+  "baseline_url": "https://www.docdrhasansahin.com/",
+  "routes": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/home",
+      "status": 200,
+      "alias_of": "/"
+    },
+    {
+      "path": "/book-dr-avens",
+      "status": 200,
+      "contains_form": true,
+      "contains_unrelated_template_copy": true
+    }
+  ],
+  "content_groups": [
+    {
+      "id": "C01",
+      "label": "Header personal identity",
+      "components": [
+        "comp-jtoeaui6"
+      ]
+    },
+    {
+      "id": "C02-C04",
+      "label": "Three professional roles",
+      "components": [
+        "comp-jtoebufb"
+      ]
+    },
+    {
+      "id": "C05",
+      "label": "Four anchor navigation items",
+      "components": [
+        "comp-jtoedejr"
+      ]
+    },
+    {
+      "id": "C06",
+      "label": "Hero quote supplied by user",
+      "components": [
+        "comp-jtgxheq0"
+      ]
+    },
+    {
+      "id": "C07",
+      "label": "Hero attribution",
+      "components": [
+        "comp-memxgigl"
+      ]
+    },
+    {
+      "id": "C08-C09",
+      "label": "About heading and personal identity",
+      "components": [
+        "comp-memxm7y5",
+        "comp-memxldz0"
+      ]
+    },
+    {
+      "id": "C10-C12",
+      "label": "Biography: roles and expertise; publications; collaboration and entrepreneurship",
+      "components": [
+        "comp-memxldz2"
+      ],
+      "paragraphs": 3
+    },
+    {
+      "id": "C13-C15",
+      "label": "Academic heading, introduction, Scholar CTA",
+      "components": [
+        "comp-jtodal6i",
+        "comp-jtgyl2ej",
+        "comp-jtr4a44b"
+      ]
+    },
+    {
+      "id": "C16-C18",
+      "label": "Three publication images",
+      "components": [
+        "comp-jtpofd8r",
+        "comp-jtrc4jgw",
+        "comp-jtrc4kra"
+      ]
+    },
+    {
+      "id": "C19-C20",
+      "label": "Speaking heading and video",
+      "components": [
+        "comp-ju2obz71",
+        "comp-jtff6odi"
+      ]
+    },
+    {
+      "id": "C21",
+      "label": "Highlights heading",
+      "components": [
+        "comp-jtodthqa"
+      ]
+    },
+    {
+      "id": "C22-C23",
+      "label": "BUKAGEM abbreviation and full center name",
+      "components": [
+        "comp-men13tn4",
+        "comp-men15p9g"
+      ]
+    },
+    {
+      "id": "C24-C26",
+      "label": "Contact heading, email and address",
+      "components": [
+        "comp-memx6zon",
+        "comp-jtodzgkh",
+        "comp-jtoe1ghd"
+      ]
+    },
+    {
+      "id": "C27",
+      "label": "Copyright and SKYTR contribution credit",
+      "components": [
+        "comp-jtodxzab"
+      ]
+    },
+    {
+      "id": "C28",
+      "label": "LinkedIn icon link",
+      "components": [
+        "comp-jtoe06tx"
+      ]
+    }
+  ],
+  "editorial_text_block_fingerprints": [
+    {
+      "route": "/",
+      "source_component_id": "comp-jtgxheq0",
+      "kind": "h1",
+      "word_count": 11,
+      "sha256": "f92f172802b1d92c7cac444f73a9ba4afb5099611c14f84243f3106c002a27f9",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-memxgigl",
+      "kind": "h1",
+      "word_count": 3,
+      "sha256": "296ed1df1e1424a004255291448fc257305c02cc60cffaaf2ed0ca0fd5c99c72",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-memxm7y5",
+      "kind": "h2",
+      "word_count": 1,
+      "sha256": "5d51d4cf7e36046dd6cb6a36a536321802bc7d63527ec2ef9ab0525e98178df0",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-memxldz0",
+      "kind": "p",
+      "word_count": 3,
+      "sha256": "296ed1df1e1424a004255291448fc257305c02cc60cffaaf2ed0ca0fd5c99c72",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-memxldz2",
+      "kind": "p",
+      "word_count": 127,
+      "sha256": "52166963529ace8090a75f9451f0db7cee5735c9956c3a4267283c0c6f224c98",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-jtodal6i",
+      "kind": "h2",
+      "word_count": 2,
+      "sha256": "5e5fcec4d171c307bf8eaabb79c0c9aecef294bbf02b9bb3083cbb2f4ef25bd8",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-jtgyl2ej",
+      "kind": "p",
+      "word_count": 23,
+      "sha256": "fe2547ccd63438983d88627e7db0756c1b2fc0441e7e45b965966db2781dc13e",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-ju2obz71",
+      "kind": "h2",
+      "word_count": 1,
+      "sha256": "27a2981bab1906ef475e0592fd8cb5f37d4fda36b26b92ebcac776a02f8482f6",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-jtodthqa",
+      "kind": "h2",
+      "word_count": 2,
+      "sha256": "478013abbff5d0f83b3c0208957fb76ea97a667951d17160397dd5bb2b4e0e62",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-men13tn4",
+      "kind": "h1",
+      "word_count": 1,
+      "sha256": "191957c0c005bfe8abe808895dc05d72656d5ad1d6bcfd1a60ff275fbad3f3d9",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/",
+      "source_component_id": "comp-men15p9g",
+      "kind": "h1",
+      "word_count": 6,
+      "sha256": "7eaa853e21f849aed7a3c134509e9524467e60d590b38480d6f13de9a1c33663",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "shared",
+      "source_component_id": "comp-jtoeaui6",
+      "kind": "p",
+      "word_count": 3,
+      "sha256": "296ed1df1e1424a004255291448fc257305c02cc60cffaaf2ed0ca0fd5c99c72",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "shared",
+      "source_component_id": "comp-jtoebufb",
+      "kind": "p",
+      "word_count": 21,
+      "sha256": "e59d7d1bc5554a2fa52f6f7c36437f0f64c6b33841b84cb10e2f8e1088c89f29",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "shared",
+      "source_component_id": "comp-memx6zon",
+      "kind": "h2",
+      "word_count": 1,
+      "sha256": "224dd5d1d982a024a2dd7aea48de5345f5bd00728322deb48ac865a7cb5980fd",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "shared",
+      "source_component_id": "comp-jtodzgkh",
+      "kind": "p",
+      "word_count": 1,
+      "sha256": "770139de6e6251b6a0349fdc9920ed573c514bc80a90173d216c2410698d9c4d",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "shared",
+      "source_component_id": "comp-jtodxzab",
+      "kind": "p",
+      "word_count": 4,
+      "sha256": "b2ad87d55cfaa1a1ae7aa12ab8bf03d0696b51f2e4d314fc15f20001abe22ba3",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "shared",
+      "source_component_id": "comp-jtoe1ghd",
+      "kind": "p",
+      "word_count": 11,
+      "sha256": "a5f6bee3c2681119729ab30cd9cda586e159cb9f650b70f0c1371cdb88d1f0eb",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81lw",
+      "kind": "h1",
+      "word_count": 8,
+      "sha256": "c06cee08be123cb5962ddf09c21c2fe50882f890b1f1280866a2a73a7def4b4f",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-m0m3jw8d",
+      "kind": "h2",
+      "word_count": 1,
+      "sha256": "f82ecbb5e510588c497d4cd055f5846140db9787b83838aee00808f0a5065d71",
+      "classification": "editorial",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzk1l73",
+      "kind": "h2",
+      "word_count": 2,
+      "sha256": "1e3083d1ae93ca58bcebdedccf5e6325ff92f5287eafdf03603f913110d54825",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81ma",
+      "kind": "p",
+      "word_count": 2,
+      "sha256": "1123e45e2845812560b13da8342857fcecdd5d6e16b494a8b780e2c559238999",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81mc",
+      "kind": "p",
+      "word_count": 19,
+      "sha256": "f822ed31372ac139880a9d6d9bccc5ab4a4621c477ac6c84a4556808c9198317",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81mg",
+      "kind": "h2",
+      "word_count": 2,
+      "sha256": "af063639155dc2e30483534b891d0ed14d57f7ff7591eff88eb42a28998e7a1a",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81mk",
+      "kind": "p",
+      "word_count": 3,
+      "sha256": "47daef6fc64ce99b127c7146cfd6c6b999cdff1b7fd28b26a4c7b605b1f16832",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81mm",
+      "kind": "p",
+      "word_count": 19,
+      "sha256": "f822ed31372ac139880a9d6d9bccc5ab4a4621c477ac6c84a4556808c9198317",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81mr",
+      "kind": "h2",
+      "word_count": 2,
+      "sha256": "143559de109eabaeff76c812b421c3bcb6c71887cd580152b2e614848e39381a",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81mt",
+      "kind": "p",
+      "word_count": 4,
+      "sha256": "2aa8b4cbe2791e8af5b4396dc6e4a88b4f55eab6697fe1018fd8f68c1a9f1e4e",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    },
+    {
+      "route": "/book-dr-avens",
+      "source_component_id": "comp-jtzj81mv",
+      "kind": "p",
+      "word_count": 19,
+      "sha256": "f822ed31372ac139880a9d6d9bccc5ab4a4621c477ac6c84a4556808c9198317",
+      "classification": "template_placeholder",
+      "source_url": "https://www.docdrhasansahin.com/book-dr-avens"
+    }
+  ],
+  "original_raster_assets": [
+    {
+      "source_component_path": "//comp-jtgxh1ep/fillLayers/image",
+      "original_url": "https://static.wixstatic.com/media/28568a_4b66ee97eaa44c8e9bef584c9ffca236~mv2.jpeg",
+      "original_filename": "1750686769836.jpeg",
+      "width": 2048,
+      "height": 1365,
+      "current_click_destination": null,
+      "affiliation": "Hasan Şahin photograph, BTÜ lectern",
+      "asset_id": "A01"
+    },
+    {
+      "source_component_path": "//comp-memxldzx/fillLayers/image",
+      "original_url": "https://static.wixstatic.com/media/28568a_287a0172ec1d4447b926c6d4944344c9~mv2.jpeg",
+      "original_filename": "1702582217550 (1).jpeg",
+      "width": 1600,
+      "height": 1600,
+      "current_click_destination": null,
+      "affiliation": "Hasan Şahin photograph, seated microphone portrait",
+      "asset_id": "A02"
+    },
+    {
+      "source_component_path": "//comp-jtodeag2/fillLayers/image",
+      "original_url": "https://static.wixstatic.com/media/28568a_5b579d15bdb64d138205cd4e8a52c379~mv2.jpeg",
+      "original_filename": "hasan-sahin-65dc270305158 (1).jpeg",
+      "width": 1800,
+      "height": 1192,
+      "current_click_destination": null,
+      "affiliation": "Hasan Şahin photograph, MÜSİAD Bursa lectern",
+      "asset_id": "A03"
+    },
+    {
+      "source_component_path": "//comp-jtpofd8r",
+      "original_url": "https://static.wixstatic.com/media/28568a_d6c349c4b6f845beabba3df766e85588~mv2.jpg",
+      "original_filename": "journal.pone.0328290_page-0001.jpg",
+      "width": 2550,
+      "height": 3300,
+      "current_click_destination": "https://scholar.google.com/citations?user=3MqbElMAAAAJ&hl=tr",
+      "affiliation": "Academic publication, PLOS ONE e0328290",
+      "asset_id": "A04"
+    },
+    {
+      "source_component_path": "//comp-jtrc4jgw",
+      "original_url": "https://static.wixstatic.com/media/28568a_c6a8d7b01711473ca474c5fd8d8f135c~mv2.jpg",
+      "original_filename": "animals-15-01475_page-0001.jpg",
+      "width": 2481,
+      "height": 3508,
+      "current_click_destination": null,
+      "affiliation": "Academic publication, Animals 15(10) 1475",
+      "asset_id": "A05"
+    },
+    {
+      "source_component_path": "//comp-jtrc4kra",
+      "original_url": "https://static.wixstatic.com/media/28568a_ca48839bb36d435d973c9774f3ac6e0d~mv2.jpg",
+      "original_filename": "OTONOM ARA__LARIN LOJISTIK SEKT__R__NE ETKILERI VE BERABERINDE GETIRDI__I YENILIKLER[#1580",
+      "width": 2480,
+      "height": 3509,
+      "current_click_destination": null,
+      "affiliation": "Academic publication, JOSS 4(1) 1–24",
+      "asset_id": "A06"
+    },
+    {
+      "original_url": "https://static.wixstatic.com/media/28568a_5057d34642b94d3ab996ac3bda0b5372~mv2.png",
+      "original_filename": "video custom poster",
+      "width": 2560,
+      "height": 1281,
+      "affiliation": "Hasan Şahin / BTÜ video",
+      "role": "video_poster",
+      "asset_id": "A07"
+    },
+    {
+      "source_component_path": "//comp-men0kq40",
+      "original_url": "https://static.wixstatic.com/media/28568a_e42543f053dd4ad184eda16bd766f188~mv2.png",
+      "original_filename": "Adobe Express - file (1).png",
+      "width": 960,
+      "height": 761,
+      "current_click_destination": "https://www.skytryazilim.com/",
+      "affiliation": "SKYTR institutional logo",
+      "asset_id": "A08"
+    },
+    {
+      "source_component_path": "//comp-men0r7a1",
+      "original_url": "https://static.wixstatic.com/media/28568a_5cd5d9d44e964accab1c5248fab1d0fd~mv2.png",
+      "original_filename": "image_edited.png",
+      "width": 400,
+      "height": 474,
+      "current_click_destination": "https://www.btu.edu.tr/",
+      "affiliation": "BTÜ institutional symbol, reused for BUKAGEM placement",
+      "asset_id": "A09"
+    },
+    {
+      "source_component_path": "//comp-men0ql7d",
+      "original_url": "https://static.wixstatic.com/media/28568a_7644b03729cd40c8b35dd0da3b4ececc~mv2.png",
+      "original_filename": "image_edited.png",
+      "width": 1024,
+      "height": 474,
+      "current_click_destination": "https://www.btu.edu.tr/",
+      "affiliation": "BTÜ institutional name",
+      "asset_id": "A10"
+    },
+    {
+      "source_component_path": "/shared/comp-jtoe06tx/images/0",
+      "original_url": "https://static.wixstatic.com/media/11062b_9e78da3320da497ab23ce28d738d388a~mv2.png",
+      "original_filename": "LinkedIn",
+      "width": 201,
+      "height": 201,
+      "current_click_destination": "https://www.linkedin.com/in/hasan-%C5%9Fahin-51956460",
+      "affiliation": "LinkedIn platform icon",
+      "asset_id": "A11"
+    }
+  ],
+  "external_links_and_anchor_targets": [
+    {
+      "text": "",
+      "label": null,
+      "href": "https://www.docdrhasansahin.com",
+      "anchor": null
+    },
+    {
+      "text": "Hakkında",
+      "label": null,
+      "href": "https://www.docdrhasansahin.com",
+      "anchor": "anchors-memxldy54"
+    },
+    {
+      "text": "Akademik Çalışmalar",
+      "label": null,
+      "href": "https://www.docdrhasansahin.com",
+      "anchor": "anchors-lt8qfpt0"
+    },
+    {
+      "text": "Konuşmalar",
+      "label": null,
+      "href": "https://www.docdrhasansahin.com",
+      "anchor": "dataItem-jtoefeez"
+    },
+    {
+      "text": "İletişim",
+      "label": null,
+      "href": "https://www.docdrhasansahin.com",
+      "anchor": "SCROLL_TO_BOTTOM"
+    },
+    {
+      "text": "Tüm Çalışmalar",
+      "label": "Tüm Çalışmalar",
+      "href": "https://scholar.google.com/citations?user=3MqbElMAAAAJ&hl=tr",
+      "anchor": null
+    },
+    {
+      "text": "",
+      "label": null,
+      "href": "https://www.skytryazilim.com/",
+      "anchor": null
+    },
+    {
+      "text": "",
+      "label": null,
+      "href": "https://www.btu.edu.tr/",
+      "anchor": null
+    },
+    {
+      "text": "",
+      "label": null,
+      "href": "https://bukagem.btu.edu.tr/",
+      "anchor": null
+    },
+    {
+      "text": "",
+      "label": "LinkedIn",
+      "href": "https://www.linkedin.com/in/hasan-%C5%9Fahin-51956460",
+      "anchor": null
+    }
+  ],
+  "publication_carousel": {
+    "autoPlay": true,
+    "showNavigationButton": true,
+    "showNavigationDots": false,
+    "autoPlayInterval": 3000,
+    "pauseAutoPlayOnMouseOver": true,
+    "transition": "SlideHorizontal",
+    "transitionDuration": 1500,
+    "slidesProps": [
+      {
+        "id": "comp-jtrc2nr5",
+        "title": "Slide  1"
+      },
+      {
+        "id": "comp-jtrc4jfj",
+        "title": "Slide 2"
+      },
+      {
+        "id": "comp-jtrc4kpt",
+        "title": "Slide  3"
+      }
+    ]
+  },
+  "video": {
+    "count": 1,
+    "channel_title": "Tüm Videolar",
+    "channel_id": "fe203622000041bebf8dcdde0752bf92",
+    "video_id": "ad4256453ef84a3cb14e6bc3d9cf118a",
+    "media_id": "28568a_e0debe08474b41b7b56a01a9e204eef2",
+    "title": "Doç.Dr. Hasan Şahin - Bursa Teknik Üniversitesi - Endüstri Mühendisliği Bölüm Tanıtım Filmi (2022)",
+    "display_duration": "04:26",
+    "width": 1280,
+    "height": 720,
+    "renditions": [
+      "480p",
+      "720p"
+    ],
+    "embed_enabled": false,
+    "download_enabled": false,
+    "subtitles_available": false,
+    "playback_observed": {
+      "duration": 266.512,
+      "time": 5.561675,
+      "paused": false
+    },
+    "direct_unsigned_mp4_status": 403,
+    "migration_requirement": "Owner-authorized media export or owner-enabled supported embed; signed stream URLs intentionally excluded.",
+    "sharing_platforms": [
+      "Facebook",
+      "Twitter",
+      "Pinterest",
+      "Tumblr"
+    ],
+    "copy_link_interface": true,
+    "copy_success_not_independently_verified": true,
+    "generated_stills": [
+      {
+        "status": "READY",
+        "secure": false,
+        "format": "jpg",
+        "url": "https://static.wixstatic.com/media/28568a_e0debe08474b41b7b56a01a9e204eef2f000.jpg",
+        "height": 720,
+        "width": 1280
+      },
+      {
+        "status": "READY",
+        "secure": false,
+        "format": "jpg",
+        "url": "https://static.wixstatic.com/media/28568a_e0debe08474b41b7b56a01a9e204eef2f001.jpg",
+        "height": 720,
+        "width": 1280
+      },
+      {
+        "status": "READY",
+        "secure": false,
+        "format": "jpg",
+        "url": "https://static.wixstatic.com/media/28568a_e0debe08474b41b7b56a01a9e204eef2f002.jpg",
+        "height": 720,
+        "width": 1280
+      },
+      {
+        "status": "READY",
+        "secure": false,
+        "format": "jpg",
+        "url": "https://static.wixstatic.com/media/28568a_e0debe08474b41b7b56a01a9e204eef2f003.jpg",
+        "height": 720,
+        "width": 1280
+      }
+    ]
+  },
+  "legacy_form": {
+    "path": "/book-dr-avens",
+    "fields": [
+      {
+        "label": "First name",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "label": "Last name",
+        "required": true,
+        "type": "text"
+      },
+      {
+        "label": "Email",
+        "required": true,
+        "type": "email"
+      },
+      {
+        "label": "Subject",
+        "required": false,
+        "type": "text"
+      },
+      {
+        "label": "Message",
+        "required": false,
+        "type": "textarea"
+      }
+    ],
+    "submit_label": "Submit",
+    "delivery_verified": false,
+    "submission_sent": false,
+    "proposed_route": "/iletisim"
+  },
+  "legacy_testimonials": [
+    {
+      "name": "Christeine Murray",
+      "organization": "NTQ Association",
+      "verified": false
+    },
+    {
+      "name": "John Fuller",
+      "organization": "President of HighRisk",
+      "verified": false
+    },
+    {
+      "name": "George Burnstein",
+      "organization": "Dean of Bursk University",
+      "verified": false
+    }
+  ],
+  "decorative_assets": {
+    "inline_svg": "Turquoise diagonal slash marks in header, section separators and footer; not an institutional logo",
+    "favicon": "https://static.parastorage.com/client/pfavico.ico",
+    "unused_reference": "28568a_99f4004f9a8a4135bb4f64ceb710de48~mv2.png appears in image title attributes, not an active distinct displayed image"
+  },
+  "new_verified_institutional_assets": [
+    {
+      "institution": "BTÜ",
+      "source_page": "https://btu.edu.tr/tr/sayfa/detay/3401/kurumsal-kimlik",
+      "url": "https://depo.btu.edu.tr/img/sayfa//1691134354_5202df5e827e9f026931.png",
+      "width": 1456,
+      "height": 474,
+      "variant": "official white horizontal full logo"
+    },
+    {
+      "institution": "BUKAGEM",
+      "source_page": "https://bukagem.btu.edu.tr/tr/sayfa/detay/8034/faaliyet-raporu-2022-2025",
+      "url": "https://depo.btu.edu.tr/img/sayfa//1766578354_7420e3e05103dde09757.pdf",
+      "page_index": 0,
+      "image_object": "Image23",
+      "width": 272,
+      "height": 185,
+      "extraction": "Unmodified embedded image, complete vertical mark",
+      "evidence_file": "evidence/bukagem-official-full-logo.png"
+    },
+    {
+      "institution": "BUKAGEM",
+      "source_page": "https://bukagem.btu.edu.tr/tr/sayfa/detay/7742/kariyer-bulteni-sayi-1",
+      "url": "https://depo.btu.edu.tr/img/sayfa//1749814423_f45e662b97308f08503f.png",
+      "width": 2828,
+      "height": 4000,
+      "full_mark_region_approx": [
+        569,
+        2126,
+        2237,
+        2346
+      ],
+      "limitation": "Complete horizontal mark embedded in bulletin cover; no standalone vector located."
+    }
+  ],
+  "verification_limits": [
+    "Public site and current roles audited; private admin not accessed.",
+    "Google Scholar retrieval rate limited with HTTP 429.",
+    "SKYTR HTTPS connection failed TLS negotiation in this environment.",
+    "Original www.btu.edu.tr direct request returned 404; canonical btu.edu.tr available.",
+    "Full video playback verified once; some other browser runs showed slow player hydration.",
+    "Settings submenu and every share destination were not independently exercised.",
+    "Form delivery not tested; no messages sent.",
+    "Responsive mobile content inspected; complete keyboard and accessibility conformance audit belongs to implementation QA."
+  ]
+}

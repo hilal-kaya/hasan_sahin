@@ -1,0 +1,298 @@
+{
+  "widths": [
+    {
+      "name": "desktop",
+      "viewport": 1440,
+      "width": 1440,
+      "images": [
+        {
+          "src": "./assets/monogram.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/portrait.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/btu-full.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/bukagem-full.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/skytr-logo.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/about-photo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-plos-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-animals-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-autonomous-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/video-poster.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/speaking-900.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/skytr-logo.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/monogram.svg",
+          "loaded": true
+        }
+      ],
+      "h1": 1,
+      "sections": 7,
+      "missingAnchors": [],
+      "disabledLinks": 0,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "name": "tablet",
+      "viewport": 834,
+      "width": 834,
+      "images": [
+        {
+          "src": "./assets/monogram.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/portrait.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/btu-full.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/bukagem-full.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/skytr-logo.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/about-photo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-plos-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-animals-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-autonomous-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/video-poster.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/speaking-900.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/skytr-logo.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/monogram.svg",
+          "loaded": true
+        }
+      ],
+      "h1": 1,
+      "sections": 7,
+      "missingAnchors": [],
+      "disabledLinks": 0,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "viewport": 390,
+      "width": 390,
+      "images": [
+        {
+          "src": "./assets/monogram.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/portrait.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/btu-full.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/bukagem-full.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/skytr-logo.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/about-photo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-plos-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-animals-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-autonomous-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/video-poster.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/speaking-900.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/skytr-logo.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/monogram.svg",
+          "loaded": true
+        }
+      ],
+      "h1": 1,
+      "sections": 7,
+      "missingAnchors": [],
+      "disabledLinks": 0,
+      "overflow": [],
+      "errors": []
+    },
+    {
+      "name": "narrow",
+      "viewport": 320,
+      "width": 320,
+      "images": [
+        {
+          "src": "./assets/monogram.svg",
+          "loaded": true
+        },
+        {
+          "src": "./assets/portrait.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/btu-full.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/bukagem-full.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/skytr-logo.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/about-photo.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-plos-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-animals-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/publication-autonomous-thumb.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/video-poster.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/speaking-900.webp",
+          "loaded": true
+        },
+        {
+          "src": "./assets/skytr-logo.png",
+          "loaded": true
+        },
+        {
+          "src": "./assets/monogram.svg",
+          "loaded": true
+        }
+      ],
+      "h1": 1,
+      "sections": 7,
+      "missingAnchors": [],
+      "disabledLinks": 0,
+      "overflow": [],
+      "errors": []
+    }
+  ],
+  "interactions": [
+    "Navigation, anchor offset, clipboard email/video/draft, publication viewer/keyboard/wrap/focus restore, form validation/draft/no send/stale draft invalidation passed."
+  ],
+  "text200": {
+    "width": 1440,
+    "viewport": 1440,
+    "overflow": []
+  },
+  "routes": [
+    {
+      "route": "/home",
+      "final": "http://127.0.0.1:4173/",
+      "title": "Doç. Dr. Hasan Şahin — Akademi · Liderlik · Teknoloji",
+      "h1": 1
+    },
+    {
+      "route": "/book-dr-avens",
+      "final": "http://127.0.0.1:4173/iletisim/",
+      "title": "İletişim & Konuşmacı Daveti — Doç. Dr. Hasan Şahin",
+      "h1": 1
+    },
+    {
+      "route": "/iletisim/",
+      "final": "http://127.0.0.1:4173/iletisim/",
+      "title": "İletişim & Konuşmacı Daveti — Doç. Dr. Hasan Şahin",
+      "h1": 1
+    },
+    {
+      "route": "/phase-1/",
+      "final": "http://127.0.0.1:4173/",
+      "title": "Doç. Dr. Hasan Şahin — Akademi · Liderlik · Teknoloji",
+      "h1": 1
+    }
+  ]
+}
