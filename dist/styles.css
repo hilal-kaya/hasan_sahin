@@ -191,7 +191,7 @@ article[id],
 .section,
 .feature-bukagem,
 .feature-skytr {
-  scroll-margin-top: calc(var(--header-height, 5.5rem) + 1.5rem);
+  scroll-margin-top: calc(var(--header-height) * 0.75);
 }
 
 /* CONTEXTUAL HIGHLIGHT (1200-1600ms subtle emphasis without large boxes or blocking) */
@@ -404,7 +404,7 @@ body:has(dialog[open]) { overflow: hidden; }
 
 /* RESPONSIVE BREAKPOINTS */
 @media (max-width: 1100px) {
-  :root { --header-height: 5.75rem; }
+  :root { --header-height: 4.75rem; }
   .header-inner { flex-wrap: wrap; padding-block: 1rem; gap: var(--space-4); }
   .menu-toggle:not([hidden]) { display: inline-flex; }
   .site-navigation { flex-basis: 100%; display: grid; padding-block: var(--space-4) var(--space-2); border-top: 1px solid var(--color-border); gap: 0; max-height: calc(100dvh - var(--header-height)); overflow-y: auto; overscroll-behavior: contain; }
@@ -430,7 +430,7 @@ body:has(dialog[open]) { overflow: hidden; }
 }
 
 @media (max-width: 759px) {
-  :root { --page-gutter: 1.25rem; --header-height: 5.5rem; }
+  :root { --page-gutter: 1.25rem; --header-height: 4.5rem; }
   .brand { gap: 0.125rem; min-width: 0; }
   .brand-wordmark { font-size: clamp(1.125rem, 5vw, 1.25rem); letter-spacing: -0.02em; }
   .brand-descriptor { font-size: 0.59375rem; letter-spacing: .13em; max-width: 15rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #c8c8c5; }
@@ -541,4 +541,489 @@ body:has(dialog[open]) { overflow: hidden; }
   .video-year { text-align: left; }
   .video-watch { bottom: .5rem; }
   .research-grid { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* ==========================================================================
+   GLOBAL SCROLL REVEAL SYSTEM (PHASE 2)
+   ========================================================================== */
+[data-reveal="up"] {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+[data-reveal="up"].is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
+/* Header Compacting Enhancements */
+.header-inner {
+  transition: min-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.site-header.is-scrolled .header-inner {
+  min-height: calc(var(--header-height) * 0.75);
+}
+@media (max-width: 1100px) {
+  .site-header.is-scrolled .header-inner {
+    padding-block: 0.5rem;
+  }
+}
+
+/* ==========================================================================
+   PHASE 3: HERO + IDENTITY INTERACTION
+   ========================================================================== */
+.mask-wrap {
+  display: block;
+  overflow: hidden;
+}
+.text-inner {
+  display: block;
+  transform: translateY(110%);
+  animation: heroTextReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  will-change: transform;
+}
+.mask-wrap:nth-child(2) .text-inner {
+  animation-delay: 0.15s;
+}
+
+@keyframes heroTextReveal {
+  to { transform: translateY(0); }
+}
+
+/* Identity Lens Global Dimming */
+body.identity-lens-active {
+  background-color: #060606;
+}
+body.identity-lens-active main > section:not(.hero) {
+  opacity: 0.4;
+  filter: grayscale(0.5);
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+body main > section {
+  transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+/* Specific Highlight Targets */
+
+
+.professional-role:hover .role-index {
+  transform: translateX(3px);
+  display: inline-block;
+}
+body.identity-lens-active .professional-role:not(.is-active-identity) {
+  opacity: 0.4;
+}
+
+/* Hero Parallax */
+.hero-portrait {
+  perspective: 1000px;
+}
+.portrait-frame {
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+
+/* ==========================================================================
+   PHASE 4: INSTITUTION CARDS + AUDIENCE ROUTING
+   ========================================================================== */
+.institution {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease;
+  will-change: transform;
+}
+.institution:hover {
+  transform: translateY(-4px);
+  background-color: rgba(255,255,255,0.015);
+}
+.institution-logo img {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+.institution:hover .institution-logo img {
+  transform: scale(1.03);
+}
+
+.intent-card {
+  transition: border-color 220ms ease, background-color 220ms ease, transform 220ms ease;
+  padding: 1.5rem 1rem .75rem; /* add slight padding for bg shift */
+  margin: 0 -1rem; /* offset padding */
+}
+.intent-card:hover {
+  background-color: rgba(255,255,255,0.025);
+  border-top-color: var(--color-accent);
+}
+.intent-num {
+  transition: transform 220ms ease, color 220ms ease;
+}
+.intent-card:hover .intent-num {
+  transform: scale(1.1);
+  color: var(--color-accent);
+}
+
+
+/* ==========================================================================
+   PHASE 5: APPROACH / INTERACTIVE TIMELINE
+   ========================================================================== */
+.approach-steps {
+  /* Parent container needs to handle hover state for children */
+}
+.approach-step {
+  transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: default;
+}
+.approach-steps:hover .approach-step:not(:hover) { opacity: 0.4; }
+
+.approach-step:hover::before { border-color: var(--color-accent); background: var(--color-accent); }
+.approach-step .step-word {
+  transition: color 0.3s ease;
+}
+.approach-step:hover .step-word {
+  color: var(--color-accent);
+}
+.approach-step .step-desc {
+  transition: color 0.3s ease;
+}
+.approach-step:hover .step-desc {
+  color: #fff;
+}
+
+/* Phase 6: Publication Filters */
+.publication-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.filter-btn {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-secondary);
+  padding: 0.5rem 1rem;
+  font-size: 0.8125rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.filter-btn:hover {
+  border-color: rgba(185,154,104, 0.4);
+  color: #fff;
+}
+.filter-btn.is-active {
+  background: rgba(185,154,104, 0.1);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+.publication {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Enhanced hover */
+.publication:hover h4 {
+  color: var(--color-accent);
+}
+.publication .editorial-link {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.publication:hover .editorial-link {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   PHASE 7: TALKS / VIDEO / SHARING
+   ========================================================================== */
+.video-stage img {
+  transition: filter 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: filter, transform;
+}
+.video-stage:hover img {
+  filter: grayscale(0) brightness(1.1);
+  transform: scale(1.02);
+}
+.video-play {
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.4s ease;
+  will-change: transform;
+}
+.video-stage:hover .video-play {
+  transform: translate(-50%, -50%) scale(1.15);
+  background: rgba(185,154,104, 0.85);
+  border-color: #fff;
+}
+
+/* Share Popover Entry Animation */
+.share-popover {
+  /* It already has transition: opacity ..., transform ... */
+  /* Let's refine the transform */
+  transform: translateY(12px) scale(0.98);
+  transform-origin: top left;
+}
+.share-popover:not([hidden]) {
+  transform: translateY(0) scale(1);
+}
+
+
+/* ==========================================================================
+   PHASE 8: FEATURED CONTENT
+   ========================================================================== */
+.feature-photo, .skytr-feature-logo {
+  overflow: hidden;
+}
+.feature-photo[data-reveal="up"], .skytr-feature-logo[data-reveal="up"] {
+  clip-path: inset(100% 0 0 0);
+  transform: none; /* Override standard translate */
+  transition: clip-path 1.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.2s ease;
+}
+.feature-photo[data-reveal="up"].is-revealed, .skytr-feature-logo[data-reveal="up"].is-revealed {
+  clip-path: inset(0 0 0 0);
+}
+.feature-photo img {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(1.1);
+}
+.feature-photo.is-revealed img {
+  transform: scale(1);
+}
+
+/* SKYTR Motif Pan */
+.skytr-grid-motif {
+  transition: background-position 3s ease-out;
+  will-change: background-position;
+}
+.feature-skytr:hover .skytr-grid-motif {
+  background-position: 20px 20px;
+}
+
+/* ==========================================================================
+   PHASE 9: CONTACT FORM REFINEMENTS
+   ========================================================================== */
+.field label {
+  transition: color 0.3s ease;
+}
+.field:focus-within label {
+  color: var(--color-accent);
+}
+
+.draft-panel {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.6s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.5s ease, padding 0.6s ease;
+  padding-top: 0;
+  border-top-color: transparent;
+}
+.draft-panel:not([hidden]) {
+  max-height: 500px;
+  opacity: 1;
+  padding-top: 1.5rem;
+  border-top-color: var(--color-accent);
+}
+
+.draft-panel[hidden] {
+  display: block !important;
+  max-height: 0;
+  opacity: 0;
+  padding-top: 0;
+  border-top-color: transparent;
+  pointer-events: none;
+}
+
+
+/* Publication List View */
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--color-border);
+}
+.publication-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr auto;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-primary);
+  text-decoration: none;
+  align-items: baseline;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.publication-row:hover {
+  background-color: rgba(255,255,255,0.02);
+}
+.publication-row .pub-year {
+  color: var(--color-secondary);
+  font-size: 0.875rem;
+}
+.publication-row .pub-title {
+  font-weight: 500;
+  line-height: 1.4;
+}
+.publication-row .pub-journal {
+  color: var(--color-secondary);
+  font-size: 0.875rem;
+}
+.publication-row .pub-link-icon {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.3s ease;
+}
+.publication-row:hover .pub-link-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+@media (max-width: 768px) {
+  .publication-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1.25rem 0;
+  }
+  .publication-row .pub-link-icon {
+    opacity: 1;
+    transform: none;
+    margin-top: 0.5rem;
+  }
+}
+
+.professional-role {
+  transition: transform 0.3s ease;
+  text-decoration: none;
+  display: block;
+}
+.professional-role dt {
+  transition: color 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.professional-role dt::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.professional-role:hover {
+  transform: translateX(4px);
+}
+.professional-role:hover dt {
+  color: var(--color-accent);
+}
+.professional-role:hover dt::after {
+  transform: scaleX(1);
+}
+
+/* Editorial Publication Filters */
+.editorial-filters {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.editorial-filters::-webkit-scrollbar {
+  display: none;
+}
+.filter-text {
+  background: none;
+  border: none;
+  color: var(--color-secondary);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 0 0 0.5rem 0;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.filter-text:hover,
+.filter-text.is-active {
+  color: var(--color-accent);
+}
+.filter-text::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem; /* Match the padding-bottom of editorial-filters */
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-accent);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+.filter-text.is-active::after {
+  transform: scaleX(1);
+}
+
+
+/* Intent Row Hover */
+.intent-row:hover {
+  background: rgba(255,255,255,0.02) !important;
+}
+.intent-row:hover h3 {
+  color: var(--color-accent) !important;
+}
+.intent-row:hover .intent-icon {
+  transform: translateX(4px) translateY(-4px) !important;
+}
+
+@media (max-width: 768px) {
+  .intent-row {
+    grid-template-columns: 1fr auto !important;
+    grid-template-rows: auto auto auto !important;
+    gap: 0.5rem !important;
+    padding: 1.5rem 0 !important;
+  }
+  .intent-row > span:first-child { grid-column: 1 / 2; grid-row: 1; }
+  .intent-row h3 { grid-column: 1 / 2; grid-row: 2; }
+  .intent-row p { grid-column: 1 / 3; grid-row: 3; }
+  .intent-row .intent-icon { grid-column: 2 / 3; grid-row: 1 / 3; align-self: center; justify-self: end; }
+}
+
+
+/* Compact Academic Section */
+.research-grid {
+  margin-block: 1.5rem !important; /* Reduced from 3rem */
+  gap: 1.5rem 1.25rem !important;
+}
+.publications-heading {
+  margin-bottom: 1rem !important;
+}
+.editorial-filters {
+  margin-bottom: 1rem !important;
+}
+.publication-row {
+  padding: 1rem 0 !important; /* Reduced from 1.5rem */
+}
+
+
+/* Compact Contact Section */
+.contact-section {
+  padding-block: 2.5rem !important;
+}
+.contact-layout {
+  gap: 2rem !important;
+}
+.contact-intro {
+  margin-bottom: 1.5rem !important;
+}
+.contact-links {
+  gap: 1.5rem !important;
 }

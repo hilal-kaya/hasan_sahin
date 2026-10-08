@@ -29,7 +29,7 @@
 
   --content-width: 90rem;
   --page-gutter: clamp(1.25rem, 4.4vw, 5rem);
-  --header-height: 6.25rem;
+  --header-height: 5rem;
   --motion-duration: 180ms;
   --motion-easing: cubic-bezier(.2, .65, .3, 1);
 }

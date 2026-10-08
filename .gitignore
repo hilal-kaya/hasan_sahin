@@ -2,3 +2,9 @@
 .sites-runtime/
 node_modules/
 *.log
+.env
+.env.local
+.env.*.local
+.chrome_qa_tmp/
+.chrome_rec_tmp/
+.openai/
